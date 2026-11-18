@@ -1,0 +1,16 @@
+{
+  "indice_original": 44,
+  "entrada": {
+    "Pregnancies": 7.0,
+    "Glucose": 159.0,
+    "BloodPressure": 64.0,
+    "SkinThickness": 0.0,
+    "Insulin": 0.0,
+    "BMI": 27.4,
+    "DiabetesPedigreeFunction": 0.294,
+    "Age": 40.0
+  },
+  "probabilidad_diabetes": 0.642660443445773,
+  "prediccion": 1,
+  "valor_real": 0
+}

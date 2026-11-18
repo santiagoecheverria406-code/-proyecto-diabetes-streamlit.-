@@ -1,0 +1,161 @@
+{
+  "modelo_final": "Random Forest optimizado",
+  "parametros": {
+    "class_weight": "balanced_subsample",
+    "max_depth": 5,
+    "min_samples_leaf": 10,
+    "n_estimators": 300
+  },
+  "prueba": {
+    "accuracy": 0.7402597402597403,
+    "precision": 0.6,
+    "recall": 0.7777777777777778,
+    "f1": 0.6774193548387096,
+    "roc_auc": 0.8198148148148148
+  },
+  "confusion_matrix": [
+    [
+      72,
+      28
+    ],
+    [
+      12,
+      42
+    ]
+  ],
+  "test_size": 154,
+  "train_size": 614,
+  "validacion_cruzada": {
+    "accuracy": {
+      "media": 0.7801012928162068,
+      "std": 0.017435574004211214
+    },
+    "precision": {
+      "media": 0.6620610392646866,
+      "std": 0.03373042914698034
+    },
+    "recall": {
+      "media": 0.7615725359911407,
+      "std": 0.03167220376522703
+    },
+    "f1": {
+      "media": 0.7072636498407823,
+      "std": 0.01782102575527858
+    },
+    "roc_auc": {
+      "media": 0.8393244739756367,
+      "std": 0.018634433312616053
+    }
+  },
+  "base_prueba": {
+    "accuracy": 0.7077922077922078,
+    "precision": 0.6,
+    "recall": 0.5,
+    "f1": 0.5454545454545454,
+    "roc_auc": 0.812962962962963
+  },
+  "base_confusion_matrix": [
+    [
+      82,
+      18
+    ],
+    [
+      27,
+      27
+    ]
+  ],
+  "importancias": {
+    "Glucose": 0.37701898319514526,
+    "BMI": 0.18592965875656509,
+    "Age": 0.12747618897207003,
+    "Insulin": 0.09995315769313994,
+    "DiabetesPedigreeFunction": 0.07388521735878412,
+    "SkinThickness": 0.049340389826455625,
+    "Pregnancies": 0.047953158257863275,
+    "BloodPressure": 0.03844324593997669
+  },
+  "comparacion_modelos": [
+    {
+      "modelo": "Regresión Logística (base)",
+      "accuracy": 0.7882,
+      "precision": 0.7638,
+      "recall": 0.5748,
+      "f1": 0.6545,
+      "roc_auc": 0.8434,
+      "recall_std": 0.0227,
+      "f1_std": 0.0244
+    },
+    {
+      "modelo": "Regresión Logística balanceada",
+      "accuracy": 0.7622,
+      "precision": 0.6486,
+      "recall": 0.701,
+      "f1": 0.6724,
+      "roc_auc": 0.8444,
+      "recall_std": 0.0395,
+      "f1_std": 0.0133
+    },
+    {
+      "modelo": "KNN",
+      "accuracy": 0.7296,
+      "precision": 0.6367,
+      "recall": 0.5654,
+      "f1": 0.5939,
+      "roc_auc": 0.7843,
+      "recall_std": 0.0558,
+      "f1_std": 0.0469
+    },
+    {
+      "modelo": "SVM balanceada",
+      "accuracy": 0.7605,
+      "precision": 0.6372,
+      "recall": 0.7617,
+      "f1": 0.6902,
+      "roc_auc": 0.8371,
+      "recall_std": 0.0517,
+      "f1_std": 0.0287
+    },
+    {
+      "modelo": "Árbol de decisión",
+      "accuracy": 0.7068,
+      "precision": 0.5614,
+      "recall": 0.7481,
+      "f1": 0.6369,
+      "roc_auc": 0.7861,
+      "recall_std": 0.1184,
+      "f1_std": 0.0518
+    },
+    {
+      "modelo": "Random Forest",
+      "accuracy": 0.7687,
+      "precision": 0.6995,
+      "recall": 0.6028,
+      "f1": 0.6458,
+      "roc_auc": 0.8209,
+      "recall_std": 0.0258,
+      "f1_std": 0.0298
+    },
+    {
+      "modelo": "Random Forest balanceado",
+      "accuracy": 0.7818,
+      "precision": 0.6928,
+      "recall": 0.6822,
+      "f1": 0.6852,
+      "roc_auc": 0.8316,
+      "recall_std": 0.046,
+      "f1_std": 0.0136
+    },
+    {
+      "modelo": "Gradient Boosting",
+      "accuracy": 0.7557,
+      "precision": 0.6721,
+      "recall": 0.5981,
+      "f1": 0.6308,
+      "roc_auc": 0.8205,
+      "recall_std": 0.0308,
+      "f1_std": 0.0134
+    }
+  ],
+  "positive_label": "Outcome = 1 (diabetes)",
+  "sklearn_version": "1.9.1"
+}
